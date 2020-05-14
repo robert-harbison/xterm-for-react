@@ -105,7 +105,7 @@ You can pass options that you want to use to instantiate the XTerm.js 'Terminal'
 
 You can use XTerm.js addons by using the `addons` prop. This prop is an array of addons you want to load.
 
-You can see an example of using addons please see [this](https://github.com/robert-harbison/xterm-for-react/blob/master/docs/src/examples/Addons.js) file in the example folder.
+You can see an example of using addons please see [this](https://github.com/robert-harbison/xterm-for-react/blob/master/example/src/examples/Addons.js) file in the example folder.
 
 ```
     // Import the addon
