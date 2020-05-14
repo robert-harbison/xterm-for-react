@@ -4,9 +4,6 @@
 
 XTerm For React is a React wrapper made for XTerm.js to allow you to easly integrate XTerm into any React project.
 
-# Demo
-You can see a demo of this library running [here.](http://my-site.com)
-
 # Getting Started
 
 ## Installation
@@ -108,7 +105,7 @@ You can pass options that you want to use to instantiate the XTerm.js 'Terminal'
 
 You can use XTerm.js addons by using the `addons` prop. This prop is an array of addons you want to load.
 
-You can see an example of using addons [here](../examples/addons).
+You can see an example of using addons please see [this](https://github.com/robert-harbison/xterm-for-react/blob/master/docs/src/examples/Addons.js) file in the example folder.
 
 ```
     // Import the addon
@@ -124,7 +121,7 @@ You can see an example of using addons [here](../examples/addons).
 
 ## Examples
 
-If you want to see a example of this in action check out [this](../examples/helloWorld). If you would like to see other examples check out the 'Examples' section on the left.
+If you want to see a example of this in action check out the ```example``` folder in the this repo.
 
 ## Other Resources
 
