@@ -1,6 +1,6 @@
 {
 	"name": "xterm-for-react",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A React wrapper made for XTerm.js",
 	"main": "dist/bundle.js",
 	"scripts": {
@@ -29,7 +29,9 @@
 	},
 	"keywords": [
 		"react",
-		"typescript"
+		"typescript",
+		"xterm.js",
+		"xterm"
 	],
 	"author": "Robert Harbison",
 	"license": "MIT",
