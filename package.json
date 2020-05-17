@@ -1,8 +1,9 @@
 {
 	"name": "xterm-for-react",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "A React wrapper made for XTerm.js",
 	"main": "dist/bundle.js",
+	"types": "dist/src/index.d.ts",
 	"scripts": {
 		"start": "webpack-dev-server --config webpack.dev.config.js",
 		"clean:start": "clean && start",
