@@ -91,7 +91,7 @@ If we don't have a wrapper for a specific method in XTerm.js you can call any fu
 
 ## Terminal Options
 
-You can pass options that you want to use to instantiate the XTerm.js 'Terminal' with as a prop tot he XTerm component. [Here](https://xtermjs.org/docs/api/terminal/interfaces/iterminaloptions/) is a link to the terminal options documentation.
+You can pass options that you want to use to instantiate the XTerm.js 'Terminal' as props to the XTerm component. [Here](https://xtermjs.org/docs/api/terminal/interfaces/iterminaloptions/) is a link to the terminal options documentation.
 
 ```
     // Import XTerm
