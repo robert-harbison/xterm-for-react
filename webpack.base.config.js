@@ -31,13 +31,13 @@ module.exports = {
 			{
 				test: /\.tsx?$/,
 				exclude: /node_modules/,
-				use: [{ loader: 'babel-loader' }, { loader: 'ts-loader' }],
+				use: ['babel-loader', 'ts-loader'],
 			},
 
 			// CSS / Styles
 			{
 				test: /\.css$/,
-				loaders: ['style-loader', 'css-loader'],
+				use: ['style-loader', 'css-loader'],
 			},
 
 			// Images
@@ -58,7 +58,7 @@ module.exports = {
 			{
 				test: /\.js$/,
 				enforce: 'pre',
-				loader: 'source-map-loader',
+				use: 'source-map-loader',
 			},
 		],
 	},
