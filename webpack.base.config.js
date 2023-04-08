@@ -3,7 +3,6 @@
  */
 const path = require('path')
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
-const EsmWebpackPlugin = require('@purtuga/esm-webpack-plugin')
 
 // Build and export the config
 module.exports = {
@@ -64,5 +63,5 @@ module.exports = {
 		],
 	},
 
-	plugins: [new ForkTsCheckerWebpackPlugin(), new EsmWebpackPlugin()],
+	plugins: [new ForkTsCheckerWebpackPlugin()],
 }
