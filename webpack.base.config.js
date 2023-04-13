@@ -15,8 +15,11 @@ module.exports = {
 	output: {
 		path: path.resolve(__dirname, 'dist'),
 		filename: '[name].js',
-		library: 'LIB',
-		libraryTarget: 'var',
+		globalObject: 'this',
+		library: {
+			name: 'xtermForReact',
+			type: 'umd',
+		},
 	},
 
 	resolve: {
