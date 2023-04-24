@@ -2,14 +2,11 @@
 	"name": "xterm-for-react",
 	"version": "1.1.0",
 	"description": "A React wrapper made for XTerm.js",
-	"main": "dist/bundle.js",
+	"main": "dist/src/index.js",
 	"types": "dist/src/index.d.ts",
 	"scripts": {
-		"start": "webpack-dev-server --config webpack.dev.config.js",
-		"clean:start": "clean && start",
 		"clean": "rimraf dist",
-		"build:dev": "npm run clean && webpack --config webpack.dev.config.js",
-		"build:prod": "npm run clean && webpack --config webpack.prod.config.js",
+		"build": "npm run clean && tsc --declaration",
 		"lint": "eslint --ext=jsx,js,tsx,ts src",
 		"precommit": "lint-staged && test",
 		"test": "jest",
@@ -78,9 +75,7 @@
 		"eslint-plugin-promise": "^6.1.1",
 		"eslint-plugin-react": "^7.32.2",
 		"file-loader": "^6.2.0",
-		"fork-ts-checker-webpack-plugin": "^8.0.0",
 		"husky": "^8.0.3",
-		"image-webpack-loader": "^8.1.0",
 		"jest": "^29.5.0",
 		"jest-environment-jsdom": "^29.5.0",
 		"lint-staged": "^13.2.1",
@@ -95,11 +90,7 @@
 		"style-loader": "^3.3.2",
 		"ts-jest": "^29.1.0",
 		"ts-loader": "^9.4.2",
-		"typescript": "^5.0.4",
-		"webpack": "^5.78.0",
-		"webpack-cli": "^5.0.1",
-		"webpack-dev-server": "^4.13.2",
-		"webpack-merge": "^5.8.0"
+		"typescript": "^5.0.4"
 	},
 	"overrides": {
 		"typescript": "^5.0.4"
