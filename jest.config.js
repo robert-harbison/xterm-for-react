@@ -12,4 +12,6 @@ module.exports = {
 		'\\.(css|less)$': '<rootDir>/tests/__mocks__/styleMock.js',
 	},
 	testPathIgnorePatterns: ['<rootDir>/tests/__mocks__'],
+	preset: 'ts-jest',
+	testEnvironment: 'jsdom',
 }

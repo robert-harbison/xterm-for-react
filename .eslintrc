@@ -1,23 +1,40 @@
 {
-	"parser": "@typescript-eslint/parser",
-	"extends": ["standard", "standard-react", "plugin:prettier/recommended", "prettier/standard", "prettier/react", "plugin:@typescript-eslint/eslint-recommended"],
-	"env": {
-		"node": true
-	},
-	"parserOptions": {
-		"ecmaVersion": 2020,
-		"ecmaFeatures": {
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+        "standard",
+        "standard-with-typescript",
+        "plugin:prettier/recommended", 
+        "prettier", 
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/eslint-recommended"
+    ],
+    "overrides": [
+    ],
+    "parserOptions": {
+        "parser": "@typescript-eslint/parser",
+        "ecmaVersion": "latest",
+        "ecmaFeatures": {
 			"legacyDecorators": true,
 			"jsx": true
-		}
-	},
-	"settings": {
-		"react": {
-			"version": "16"
-		}
-	},
-	"rules": {
-		"space-before-function-paren": 0,
+		},
+        "sourceType": "module",
+        "project": "tsconfig.json"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint"
+    ],
+    "settings" : {
+        "react": {
+            "version" : "18"
+        }
+    },
+    "rules": {
+        "space-before-function-paren": 0,
 		"react/prop-types": 0,
 		"react/jsx-handler-names": 0,
 		"react/jsx-fragments": 0,
@@ -28,6 +45,11 @@
 			{
 				"endOfLine": "auto"
 			}
-		]
-	}
+		],
+        "@typescript-eslint/method-signature-style": 0,
+        "@typescript-eslint/consistent-type-imports": 0,
+        "@typescript-eslint/array-type": 0,
+        "@typescript-eslint/explicit-function-return-type": 0,
+        "@typescript-eslint/strict-boolean-expressions": 0
+    }
 }

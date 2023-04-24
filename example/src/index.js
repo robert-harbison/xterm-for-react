@@ -1,17 +1,17 @@
 import './index.css'
 
 import React from 'react'
-import ReactDOM from 'react-dom'
-import App from './App'
-import HelloWorld from './examples/HelloWorld'
-import Echo from './examples/Echo'
-import Addons from './examples/Addons'
+import ReactDOM from 'react-dom/client'
+import App from './App.js'
+import HelloWorld from './examples/HelloWorld.js'
+import Echo from './examples/Echo.js'
+import Addons from './examples/Addons.js'
 
 import {
     BrowserRouter as Router,
     Switch,
     Route,
-  } from "react-router-dom";
+} from "react-router-dom";
 
 const routing = (
     <Router>
@@ -24,4 +24,6 @@ const routing = (
     </Router>
 )
 
-ReactDOM.render(routing, document.getElementById('root'))
+ReactDOM.createRoot(document.getElementById('root')).render(
+    routing
+)
